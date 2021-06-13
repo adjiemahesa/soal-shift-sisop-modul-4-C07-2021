@@ -158,6 +158,10 @@ Sesudah:
 ![image](https://user-images.githubusercontent.com/55140514/121811155-b12e7900-cc8d-11eb-91af-fe385ebc43ac.png)
 ![image](https://user-images.githubusercontent.com/55140514/121811158-b55a9680-cc8d-11eb-8ffb-a57fa0fc0cc1.png)
 
+Pembuktian Enkripsi:
+
+![image](https://user-images.githubusercontent.com/55140514/121811342-52b5ca80-cc8e-11eb-83d1-3ea316eb24ae.png)
+
 
 
 # Soal 2
@@ -226,7 +230,7 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 PEMBAHASAN :
 
-Untuk Menjawab dari soal nomor 4 disini kami menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
+Untuk Menjawab dari soal nomor 4 disini kamu menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
 
 ```
 void logCreate(char *c, int type)
