@@ -15,7 +15,7 @@ d. Setiap pembuatan direktori ter-encode (mkdir atau rename) akan tercatat ke se
 e. Metode encode pada suatu direktori juga berlaku terhadap direktori yang ada di dalamnya.(rekursif)
 
 
-# jawaban soal 1
+## Jawaban Soal 1
 
 Untuk soal nomor 1 kami membuat fungsi untuk mengambil string tanpa ekstensi untuk dienkripsi menggunakan Atbash Cipher yang dipanggil saat readdir, berikut fungsi yang kami buat :
 ```
@@ -228,7 +228,7 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 ```INFO::28052021-10:01:00:RENAME::/test.txt::/rename.txt```
 
-PEMBAHASAN :
+## Jawaban Soal 4
 
 Untuk Menjawab dari soal nomor 4 disini kami menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kami mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
 
@@ -259,9 +259,6 @@ void logCreate(char *c, int type)
     fclose(logFile);
 }
 ```
-
-
-
 
 ## Screenshot
 
