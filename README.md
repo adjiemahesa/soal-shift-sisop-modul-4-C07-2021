@@ -49,7 +49,7 @@ void encrypt1(char *str) //encrypt AtoZ
 
 fungsi akan melakukan print  untuk penanda pada terminal bahwa fungsi ini sedang melakukan encrypting. kemudian fungsi melakukan loop sepanjang string untuk mendapatkan nilai index terakhir sebelum ``.`` dan berhenti jika isi string adalah ```.``` lalu memasukannya kedalam variabel i
 
-kemudian kami membuat fungsi untuk melakukan decrypting yang memiliki kegunaan yang hampir sama dengan fungsi encrypting sebelumnya, yaitu mengambil string tanpa ekstensi yang nantinya akan dipanggil saat getattr, readdir, unlink, dan saat rmdir untu melakukan dekripsi. berikut fungsi yang kami buat :
+kemudian kami membuat fungsi untuk melakukan decrypting yang memiliki kegunaan yang hampir sama dengan fungsi encrypting sebelumnya, yaitu mengambil string tanpa ekstensi yang nantinya akan dipanggil saat getattr, readdir, unlink, dan saat rmdir. berikut fungsi yang kami buat :
 ```
 void decrypt1(char *str)
 {
