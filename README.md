@@ -19,22 +19,22 @@ __pembahasan__
 
 ## Screenshot
 Compile dan folder yang akan digunakan
+
 ![image](https://user-images.githubusercontent.com/55140514/121810636-d6ba8300-cc8b-11eb-8bb6-347a540a5a99.png)
 
-
 Folder Menjadi seperti berikut
+
 ![image](https://user-images.githubusercontent.com/55140514/121810652-e4700880-cc8b-11eb-8d22-bc37d0e989d6.png)
 
-
 Sebelum:
-![image](https://user-images.githubusercontent.com/55140514/121810671-f5207e80-cc8b-11eb-896d-8b0f5151139b.png)
 
+![image](https://user-images.githubusercontent.com/55140514/121810671-f5207e80-cc8b-11eb-896d-8b0f5151139b.png)
 ![image](https://user-images.githubusercontent.com/55140514/121810676-f8b40580-cc8b-11eb-980d-700e7b515d91.png)
 
 
 Sesudah:
-![image](https://user-images.githubusercontent.com/55140514/121810696-0cf80280-cc8c-11eb-9f48-08c872212cd5.png)
 
+![image](https://user-images.githubusercontent.com/55140514/121810696-0cf80280-cc8c-11eb-9f48-08c872212cd5.png)
 ![image](https://user-images.githubusercontent.com/55140514/121810712-16816a80-cc8c-11eb-9983-3052095113a3.png)
 
 
