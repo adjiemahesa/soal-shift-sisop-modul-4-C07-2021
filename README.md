@@ -80,7 +80,7 @@ void decrypt1(char *str)
 
 ```
 
-fungsi ini juga akan melakukan print untuk penanda pada terminal bahwa fungsi ini sedang melakukan decrypting. kemudian fungsi melakukan loop sepanjang string dari nama file untuk mendapatkan nilai index terakhir dari nama file dan berhenti jika isi string adalah ```.``` atau ```/```lalu memasukannya kedalam variabel
+fungsi ini juga akan melakukan print untuk penanda pada terminal bahwa fungsi ini sedang melakukan decrypting. kemudian fungsi melakukan loop sepanjang string dari nama file untuk mendapatkan nilai index terakhir dari nama file dan berhenti jika isi string adalah ```.``` atau ```/```lalu memasukannya kedalam variabel i
 
 
 selanjutnya kami membuat fungsi mirrorFunc yang melakukan pembalikan abjad untuk enkripsi sekaligus dekripsi fungsinya sebagai berikut :
