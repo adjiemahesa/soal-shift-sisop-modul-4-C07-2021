@@ -15,6 +15,9 @@ d. Setiap pembuatan direktori ter-encode (mkdir atau rename) akan tercatat ke se
 e. Metode encode pada suatu direktori juga berlaku terhadap direktori yang ada di dalamnya.(rekursif)
 
 
+__pembahasan__
+
+
 # Soal 2
 
 Selain itu Sei mengusulkan untuk membuat metode enkripsi tambahan agar data pada komputer mereka semakin aman. Berikut rancangan metode enkripsi tambahan yang dirancang oleh Sei
