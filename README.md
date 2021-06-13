@@ -243,6 +243,7 @@ void logCreate(char *c, int type)
 
 
 *Screenshot*
+
 ![image](https://user-images.githubusercontent.com/55140514/121810990-0f0e9100-cc8d-11eb-8fd5-150f12c2139e.png)
 
 
