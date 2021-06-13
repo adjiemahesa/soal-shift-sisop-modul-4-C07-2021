@@ -148,12 +148,12 @@ Compile dengan folder yang akan digunakan cdgf
 ![image](https://user-images.githubusercontent.com/55140514/121811107-7d535380-cc8d-11eb-9698-5ea0c1bb54c7.png)
 ![image](https://user-images.githubusercontent.com/55140514/121811134-965c0480-cc8d-11eb-9958-165853573dc5.png)
 
-Sebelum:
+**Sebelum:**
 
 ![image](https://user-images.githubusercontent.com/55140514/121811140-a247c680-cc8d-11eb-99f3-324b0f6186bc.png)
 ![image](https://user-images.githubusercontent.com/55140514/121811143-a673e400-cc8d-11eb-8179-752595fc38e4.png)
 
-Sesudah:
+**Sesudah:**
 
 ![image](https://user-images.githubusercontent.com/55140514/121811155-b12e7900-cc8d-11eb-91af-fe385ebc43ac.png)
 ![image](https://user-images.githubusercontent.com/55140514/121811158-b55a9680-cc8d-11eb-8ffb-a57fa0fc0cc1.png)
