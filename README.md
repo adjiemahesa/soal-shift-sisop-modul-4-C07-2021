@@ -186,6 +186,10 @@ Suatu_File.txt.0002
 
 Ketika diakses melalui filesystem hanya akan muncul Suatu_File.txt
 
+# kendala soal nomor 2
+
+kami masih belum dapat menemukan solusi untuk mengerjakan soal nomor 2
+
 
 # Soal 3
 
@@ -204,6 +208,9 @@ e. Pada direktori spesial semua nama file (tidak termasuk ekstensi) pada fuse ak
 
 Contohnya jika pada direktori asli nama filenya adalah “FiLe_CoNtoH.txt” maka pada fuse akan menjadi “file_contoh.txt.1321”. 1321 berasal dari biner 10100101001.
 
+# kendala soal nomor 3
+
+kami masih belum dapat menemukan solusi untuk mengerjakan soal nomor 3
 
 # Soal 4
 
