@@ -230,7 +230,7 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 PEMBAHASAN :
 
-Untuk Menjawab dari soal nomor 4 disini kamu menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
+Untuk Menjawab dari soal nomor 4 disini kami menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kami mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
 
 ```
 void logCreate(char *c, int type)
