@@ -142,6 +142,7 @@ void logAtoZ(const char *currPath, const char *newPath)
 ```
 
 *Screenshot*
+
 Compile dengan folder yang akan digunakan cdgf
 
 ![image](https://user-images.githubusercontent.com/55140514/121811107-7d535380-cc8d-11eb-9698-5ea0c1bb54c7.png)
