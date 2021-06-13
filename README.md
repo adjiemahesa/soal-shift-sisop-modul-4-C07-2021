@@ -205,7 +205,7 @@ e. Pada direktori spesial semua nama file (tidak termasuk ekstensi) pada fuse ak
 Contohnya jika pada direktori asli nama filenya adalah “FiLe_CoNtoH.txt” maka pada fuse akan menjadi “file_contoh.txt.1321”. 1321 berasal dari biner 10100101001.
 
 
-# soal 4
+# Soal 4
 
 Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei membuat sebuah log system dengan spesifikasi sebagai berikut.
 
