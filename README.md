@@ -49,7 +49,7 @@ void encrypt1(char *str) //encrypt AtoZ
 
 fungsi akan melakukan print  untuk penanda pada terminal bahwa fungsi ini sedang melakukan encrypting. kemudian fungsi melakukan loop sepanjang string untuk mendapatkan nilai index terakhir sebelum ``.`` dan berhenti jika isi string adalah ```.``` lalu memasukannya kedalam variabel i
 
-kemudian kami membuat fungsi untuk melakukan decrypting yang memiliki kegunaan yang hampir sama dengan fungsi encrypting sebelumnya, yaitu mengambil string tanpa ekstensi yang nantinya akan dipanggil saat getattr, readdir, unlink, dan saat rmdir. berikut fungsi yang kami buat :
+kemudian kami membuat fungsi untuk melakukan decrypting yang memiliki kegunaan yang hampir sama dengan fungsi encrypting sebelumnya, yaitu mengambil string tanpa ekstensi yang nantinya akan dipanggil saat getattr, readdir, unlink, dan saat rmdir untu melakukan dekripsi. berikut fungsi yang kami buat :
 ```
 void decrypt1(char *str)
 {
@@ -226,7 +226,7 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 PEMBAHASAN :
 
-Untuk Menjawab dari soal nomor 4 disini kamu menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
+Untuk Menjawab dari soal nomor 4 disini kami menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
 
 ```
 void logCreate(char *c, int type)
