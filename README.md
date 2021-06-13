@@ -15,7 +15,132 @@ d. Setiap pembuatan direktori ter-encode (mkdir atau rename) akan tercatat ke se
 e. Metode encode pada suatu direktori juga berlaku terhadap direktori yang ada di dalamnya.(rekursif)
 
 
-__pembahasan__
+#jawaban soal 1
+
+membuat fungsi untuk mengambil string tanpa ekstensi untuk dienkripsi menggunakan Atbash Cipher yang dipanggil saat readdir, berikut fungsi yag kami buat :
+```
+void encrypt1(char *str) //encrypt AtoZ
+{
+    if (strcmp(str, ".") == 0)
+    return;
+    if (strcmp(str, "..") == 0)
+    return;
+
+    printf("encrypting %s\n", str);
+
+    int lastIdx = strlen(str);
+    for (int i = lastIdx; i >= 0; i--)
+    {
+        if (str[i] == '/')
+        {
+            continue;
+        }
+        if (str[i] == '.')
+        {
+            lastIdx = i;
+            break;
+        }
+    }
+    mirrorFunc(str, lastIdx);
+    printf("last %s\n", str);
+}
+```
+
+
+fungsi akan melakukan print  untuk penanda pada terminal bahwa fungsi ini sedang melakukan encrypting. kemudian fungsi melakukan loop sepanjang string untuk mendapatkan nilai index terakhir sebelum ``.`` dan berhenti jika isi string adalah ```.``` lalu memasukannya kedalam variabel i
+
+kemudian kami membuat fungsi untuk melakukan decrypting yang memiliki kegunaan yang hampir sama dengan fungsi encrypting sebelumnya, yaitu mengambil string tanpa ekstensi yang nantinya akan dipanggil saat getattr, readdir, unlink, dan saat rmdir untu melakukan dekripsi. berikut fungsi yag kami buat :
+```
+void decrypt1(char *str)
+{
+    if (strcmp(str, ".") == 0)
+    return;
+    if (strcmp(str, "..") == 0)
+    return;
+    if (strstr(str, "/") == NULL)
+    return;
+
+    char *nameFile = strstr(str, "/");
+
+    printf("decrypting %s - %s\n", str, nameFile);
+
+    int lastIdx = strlen(nameFile);
+    for (int i = lastIdx; i >= 0; i--)
+    {
+        if (nameFile[i] == '/')
+            break;
+        if (nameFile[i] == '.')
+        {
+            lastIdx = i;
+            break;
+        }
+    }
+    mirrorFunc(nameFile + 1, lastIdx);
+}
+
+```
+
+fungsi ini juga akan melakukan print untuk penanda pada terminal bahwa fungsi ini sedang melakukan decrypting. kemudian fungsi melakukan loop sepanjang string dari nama file untuk mendapatkan nilai index terakhir dari nama file dan berhenti jika isi string adalah ```.``` atau ```/```lalu memasukannya kedalam variabel
+
+
+selanjutnya kami membuat fungsi mirrorFunc yang melakukan pembalikan abjad untuk enkripsi sekaligus dekripsi fungsinya sebagai berikut :
+
+```
+void mirrorFunc(char *str, int safeIndex)
+{
+    for (int j = 0; j < safeIndex; j++)
+    {
+        int alphabet = 26;
+        char start = str[j];
+
+        if (str[j] >= 65 && str[j] <= 90)
+        {
+            str[j] = str[j] - 65 + 1;
+            str[j] = alphabet - str[j];
+            str[j] += 65;
+        }
+        else if (str[j] >= 97 && str[j] <= 122)
+        {
+            str[j] = str[j] - 97 + 1;
+            str[j] = alphabet - str[j];
+            str[j] += 97;
+        }
+        printf("%c menjadi %c\n", start, str[j]);
+    }
+}
+```
+fungsi di atas melakukan perulangan untuk membalik huruf alphabet sesuai dengan kode ASCII
+```
+if (str[j] >= 65 && str[j] <= 90)
+        {
+            str[j] = str[j] - 65 + 1;
+            str[j] = alphabet - str[j];
+            str[j] += 65;
+        }
+```
+potongan diatas adalah untuk membalik huruf alphabet kapital
+
+```
+else if (str[j] >= 97 && str[j] <= 122)
+        {
+            str[j] = str[j] - 97 + 1;
+            str[j] = alphabet - str[j];
+            str[j] += 97;
+        }
+```
+potongan diatas adalah untuk membalik huruf alphabet yang bukan kapital 
+
+kemudian setiap folder yang dibuat atau direname dengan awalan AtoZ_ ditulist di dalam log menggunakan fungsi berikut :
+```
+void logAtoZ(const char *currPath, const char *newPath)
+{
+    FILE *logFile = fopen("/home/adjie/AtoZ.log", "a");
+    fprintf(logFile, "%s → %s\n", currPath, newPath);
+
+    fclose(logFile);
+}
+```
+
 
 
 # Soal 2
