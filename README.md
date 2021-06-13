@@ -15,7 +15,7 @@ d. Setiap pembuatan direktori ter-encode (mkdir atau rename) akan tercatat ke se
 e. Metode encode pada suatu direktori juga berlaku terhadap direktori yang ada di dalamnya.(rekursif)
 
 
-#jawaban soal 1
+# jawaban soal 1
 
 membuat fungsi untuk mengambil string tanpa ekstensi untuk dienkripsi menggunakan Atbash Cipher yang dipanggil saat readdir, berikut fungsi yag kami buat :
 ```
