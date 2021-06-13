@@ -17,26 +17,6 @@ e. Metode encode pada suatu direktori juga berlaku terhadap direktori yang ada d
 
 __pembahasan__
 
-## Screenshot
-Compile dan folder yang akan digunakan
-
-![image](https://user-images.githubusercontent.com/55140514/121810636-d6ba8300-cc8b-11eb-8bb6-347a540a5a99.png)
-
-Folder Menjadi seperti berikut
-
-![image](https://user-images.githubusercontent.com/55140514/121810652-e4700880-cc8b-11eb-8d22-bc37d0e989d6.png)
-
-Sebelum:
-
-![image](https://user-images.githubusercontent.com/55140514/121810671-f5207e80-cc8b-11eb-896d-8b0f5151139b.png)
-![image](https://user-images.githubusercontent.com/55140514/121810676-f8b40580-cc8b-11eb-980d-700e7b515d91.png)
-
-
-Sesudah:
-
-![image](https://user-images.githubusercontent.com/55140514/121810696-0cf80280-cc8c-11eb-9f48-08c872212cd5.png)
-![image](https://user-images.githubusercontent.com/55140514/121810712-16816a80-cc8c-11eb-9983-3052095113a3.png)
-
 
 # Soal 2
 
@@ -104,8 +84,35 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 PEMBAHASAN :
 
-## Screenshot
-![image](https://user-images.githubusercontent.com/55140514/121810315-8a227800-cc8a-11eb-9459-a56ea12edb96.png)
+Untuk Menjawab dari soal nomor 4 disini kamu menggunakan Fungsi `logCreate` yang dimana pada fungsi ini kita mendeklarasikan file terlebih dahulu dengan nama `logFile`. Setelah itu nantinya akan di fopen dengan menggunakan parameter "a" yang di mana "a" sendiri sebagai penghubung atau `append`. di sini juga untuk penginfoan terdapat fungsi `if` dengan tujuan sebagai log fungsi syscall unlink dan rmdir dengan menampilkan `Warning` dan `Info` lalu kemudian menampilkan level INFO . 
+
+```
+void logCreate(char *c, int type)
+{
+    FILE *logFile = fopen("/home/adjie/SinSeiFS.log", "a");
+    time_t currTime;
+    struct tm *time_info;
+    time(&currTime);
+    time_info = localtime(&currTime);
+
+    int year = time_info->tm_year + 1900;
+    int month = time_info->tm_mon + 1;
+    int day = time_info->tm_mday;
+    int hour = time_info->tm_hour;
+    int min = time_info->tm_min;
+    int sec = time_info->tm_sec;
+
+    if (type == 1)
+    { 
+        fprintf(logFile, "INFO::%02d%02d%d-%d:%d:%d:%s\n", day, month, year, hour, min, sec, c);
+    }
+    else if (type == 2)
+    { 
+        fprintf(logFile, "WARNING::%02d%02d%d-%d:%d:%d:%s\n", day, month, year, hour, min, sec, c);
+    }
+    fclose(logFile);
+}
+```
 
 
 
