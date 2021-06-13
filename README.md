@@ -84,6 +84,8 @@ Untuk memudahkan dalam memonitor kegiatan pada filesystem mereka Sin dan Sei mem
 
 PEMBAHASAN :
 
+## Screenshot
+![image](https://user-images.githubusercontent.com/55140514/121810315-8a227800-cc8a-11eb-9459-a56ea12edb96.png)
 
 
 
