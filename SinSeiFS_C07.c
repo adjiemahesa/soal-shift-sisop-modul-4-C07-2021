@@ -55,19 +55,19 @@ void mirrorFunc(char *str, int safeIndex)
 {
     for (int j = 0; j < safeIndex; j++)
     {
-        int alphabetCount = 26;
+        int alphabet = 26;
         char start = str[j];
 
         if (str[j] >= 65 && str[j] <= 90)
         {
             str[j] = str[j] - 65 + 1;
-            str[j] = alphabetCount - str[j];
+            str[j] = alphabet - str[j];
             str[j] += 65;
         }
         else if (str[j] >= 97 && str[j] <= 122)
         {
             str[j] = str[j] - 97 + 1;
-            str[j] = alphabetCount - str[j];
+            str[j] = alphabet - str[j];
             str[j] += 97;
         }
         printf("%c menjadi %c\n", start, str[j]);
